@@ -6,9 +6,9 @@ pipeline {
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "18.207.93.13:8081/"           // ip need to according you machine
-        NEXUS_REPOSITORY = "robin"   // repository what you have created
-        NEXUS_CREDENTIAL_ID = "robin" //jenkins user-id created by you
+        NEXUS_URL = "http://54.82.50.194/:8081/"           // ip need to according you machine
+        NEXUS_REPOSITORY = "maven-hosted-devesh"// repository what you have created
+        NEXUS_CREDENTIAL_ID = "nexus-credentials" //jenkins user-id created by you
     }
     stages {
         stage("Maven Build") {
